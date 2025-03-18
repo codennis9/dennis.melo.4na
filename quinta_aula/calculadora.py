@@ -20,12 +20,14 @@ def divisão():
     n1 = int(input("Digite um número: "))
     n2 = int(input("Digite outro número: "))
     divisão = n1 / n2
-    print(f"{n1} / {n2} = {divisão}" 
+    print(f"{n1} / {n2} = {divisão}") 
 
 if usuario == "soma":
     soma()
 elif usuario == "tabuada":
     tabuada()
+elif usuario == "divisão":
+    divisão()
 else:
     print("Opção inválida")
 

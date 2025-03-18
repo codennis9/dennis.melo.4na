@@ -1,13 +1,13 @@
 print("Calculadora")
 
-usuario = input("Digite o que deseja fazer: Soma ou Tabuada: ").lower()
+usuario = input("Digite o que deseja fazer: soma, tabuada ou divisão: ").lower()
 
 def soma():
     print("Soma")
     user = int(input("Digite um número: "))
     user2 = int(input("Digite outro número: "))
     soma = user + user2
-    print(f"A soma de {user} + {user2} é igual a {soma}")
+    print(f"{user} + {user2} = {soma}")
 
 def tabuada():
     print("Tabuada")
@@ -15,6 +15,12 @@ def tabuada():
     for tabuada in range(1, 11):
         valor = user * tabuada
         print(f"{user} x {tabuada} = {valor}")
+
+def divisão():
+    n1 = int(input("Digite um número: "))
+    n2 = int(input("Digite outro número: "))
+    divisão = n1 / n2
+    print(f"{n1} / {n2} = {divisão}" 
 
 if usuario == "soma":
     soma()
